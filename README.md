@@ -1,4 +1,4 @@
-# v0-bt5-vue
+ v0-bt5-vue
 Projeto inicial para outros projetos com [__vue3__](https://vuejs.org/) e [__bootstrap5__](https://getbootstrap.com/)
 
 O esperado de um projeto incial:
