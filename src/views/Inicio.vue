@@ -1,14 +1,11 @@
 <template>
-  <div class="inicio">
-    <div class="container-fluid mt-5 position-absolute">
+    <div class="container bg-light mt-5">
       <div class="row">
         <div class="col-md-12">
           <p class="text-center fs-1">Apresentação</p>
         </div>
       </div>
     </div>
-    
-  </div>
 </template>
 
 <script lang="ts">
