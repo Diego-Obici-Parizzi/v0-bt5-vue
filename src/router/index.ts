@@ -7,22 +7,22 @@ export const routes = [
     path: `${baseUrl}/`,
     //component: () => import("@/layouts/Default.vue"),
     children: [
-      { path: "", name: "Home", component: () => import("@/views/HomeView.vue") }
+      { path: "", name: "Inicio", component: () => import("@/views/Inicio.vue") }
     ],
   },
   {
-    path: `${baseUrl}/about`,
+    path: `${baseUrl}/Pomodoro`,
     //component: () => import("@/layouts/Page.vue"),
     children: [
-      { path: "", name: "About", component: () => import("@/views/HomeView.vue") }
+      { path: "", name: "Pomodoro", component: () => import("@/views/Pomodoro.vue") }
     ],
   },
 
   {
-    path: `${baseUrl}/contacts`,
+    path: `${baseUrl}/Estatisticas`,
     //component: () => import("@/layouts/Page.vue"),
     children: [
-      { path: "", name: "Contacts", component: () => import("@/views/HomeView.vue") },
+      { path: "", name: "Estatisticas", component: () => import("@/views/Estatisticas.vue") },
     ],
   },
   

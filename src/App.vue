@@ -1,44 +1,29 @@
-<script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import Navbar from "@/components/NavBar.vue"; // Importe o Navbar.vue
-import AppCarousel from "@/components/AppCarousel.vue"; // Renomeie Carousel para AppCarousel
-
-const { t } = useI18n(); // Remova 'locale' pois não é usado
-</script>
-
 <template>
-  <div id="app">
-    <!-- Exibição do texto traduzido (mantido) -->
-    <h1>{{ t("welcome") }}</h1>
-
-    <!-- Barra de navegação com o dropdown de idioma estilizado, links e modo escuro -->
-    <Navbar />
-
-    <!-- Adiciona o carrossel -->
-    <AppCarousel />
-    <!-- Atualize para AppCarousel -->
-
-    <!-- Renderiza as rotas (HomeView, AboutView, ContactsView, etc.) -->
-    <RouterView />
-  </div>
-</template>
-
-<style scoped>
-/* Estilos para ajustar o layout, consistentes com a imagem */
-#app {
-  padding-top: 0; /* Remove qualquer padding indesejado no topo */
-  background-color: #212529; /* Fundo escuro, consistente com a imagem */
-  color: #ffffff; /* Texto branco, consistente com o design */
-}
-
-h1 {
-  text-align: center;
-  padding: 1rem 0;
-  margin: 0; /* Remove margens padrão para alinhar com a navbar */
-}
-
-/* Ajuste adicional para o carrossel */
-.carousel {
-  margin: 20px auto; /* Adiciona um espaço acima e abaixo do carrossel */
-}
-</style>
+    <NavBar :logo="logo_src" :alt="app_name"/>
+    <router-view/>
+    <FooterBar :utfpr="Utfpr_logo" :alt_2="utfpr_name"/>
+  </template>
+  <script lang="ts">
+import Footer from './components/FooterBar.vue';
+import Navbar from './components/NavBar.vue';
+  export default {
+    components: {
+      FooterBar: Footer,
+      NavBar: Navbar
+    },
+    data() {
+      return {
+        logo_src: ('./img/pomodoro-logo.png'),
+        app_name: 'Pomodoro App',
+        Utfpr_logo: ('./img/utfpr.gif'),
+        utfpr_name: 'UTFPR Logo'
+      };
+    }
+  }
+    
+  </script>
+  <style>
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  </style>
