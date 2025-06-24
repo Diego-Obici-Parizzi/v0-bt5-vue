@@ -55,6 +55,6 @@
         margin-top: 40px;
     }
     #logo{
-        height: 15vh;
+        height: 13vh;
     }
     </style>
