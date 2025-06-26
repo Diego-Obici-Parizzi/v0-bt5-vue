@@ -10,6 +10,7 @@ export const routes = [
       { path: "", name: "Inicio", component: () => import("@/views/Inicio.vue") }
     ],
   },
+
   {
     path: `${baseUrl}/Pomodoro`,
     //component: () => import("@/layouts/Page.vue"),
@@ -26,6 +27,12 @@ export const routes = [
     ],
   },
   
+  {
+    path: `${baseUrl}/gerenciar-rodape`,
+    children: [
+      { path: "", name: "GerenciarRodape", component: () => import("@/views/Contribuintes.vue") }
+    ],
+  },
 ];
 
 export const router = createRouter({
