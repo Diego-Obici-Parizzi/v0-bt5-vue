@@ -11,21 +11,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="/" class="nav-link text-decoration-none text-warning"><h3>Inicio</h3></router-link> 
+              <router-link to="/" class="nav-link text-decoration-none text-white"><h3>Inicio</h3></router-link> 
             </li>
             <li class="nav-item">
-              <router-link to="/pomodoro" class="nav-link text-decoration-none text-warning"><h3>Pomodoro</h3></router-link> 
+              <router-link to="/pomodoro" class="nav-link text-decoration-none text-white"><h3>Pomodoro</h3></router-link> 
             </li>
             <li class="nav-item">
-              <router-link to="/estatisticas" class="nav-link text-decoration-none text-warning"><h3>Estatisticas</h3></router-link> 
+              <router-link to="/estatisticas" class="nav-link text-decoration-none text-white"><h3>Estatisticas</h3></router-link> 
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-warning fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Idiomas
               </a>
-              <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Portugues</a></li>
-                <li><a class="dropdown-item" href="#">Ingles</a></li>
+              <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Português</a></li>
+                <li><a class="dropdown-item" href="#">Inglês</a></li>
                 <li><a class="dropdown-item" href="#">Espanhol</a></li>
               </ul>
             </li>
@@ -55,6 +55,6 @@
         margin-top: 40px;
     }
     #logo{
-        height: 13vh;
+        height: 10vh;
     }
     </style>
