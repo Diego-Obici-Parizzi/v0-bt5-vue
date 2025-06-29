@@ -1,18 +1,35 @@
 {
-  "footer": {
-    "escopo": "teste",
-    "contribuinte": "é o neri?"
-  },
   "ferramentas": [
     {
       "id": "1",
-      "nome": "Vue.js",
-      "url": "https://vuejs.org"
+      "descricao": "Vue.js",
+      "url": "https://vuejs.org/"
     },
     {
-      "id": "5c73",
-      "nome": "Curso de VUE",
-      "url": "https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL"
+      "id": "2",
+      "descricao": "Bootstrap 5",
+      "url": "https://getbootstrap.com/"
+    },
+    {
+      "id": "86ee",
+      "descricao": "sefesfse",
+      "url": "https://vuejs.org/"
+    }
+  ],
+  "contribuintes": [
+    {
+      "id": "1",
+      "nome": "Seu Colega",
+      "contato": "email@colega.com",
+      "contribuicao": "Estrutura inicial do projeto",
+      "periodo": "2025/2"
+    },
+    {
+      "id": "0398",
+      "nome": "Diego Obici Parizzi",
+      "contato": "diego_parizzi@hotmail.com",
+      "contribuicao": "FooterBar",
+      "periodo": "2025/2"
     }
   ]
 }
