@@ -10,20 +10,9 @@
       "descricao": "Bootstrap 5",
       "url": "https://getbootstrap.com/"
     },
-    {
-      "id": "86ee",
-      "descricao": "sefesfse",
-      "url": "https://vuejs.org/"
-    }
   ],
   "contribuintes": [
-    {
-      "id": "1",
-      "nome": "Seu Colega",
-      "contato": "email@colega.com",
-      "contribuicao": "Estrutura inicial do projeto",
-      "periodo": "2025/2"
-    },
+    
     {
       "id": "0398",
       "nome": "Diego Obici Parizzi",

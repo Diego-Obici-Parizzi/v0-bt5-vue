@@ -85,7 +85,6 @@ const contribuinteEmEdicao = ref(null);
 const mensagemSucesso = ref('');
 const mensagemErro = ref('');
 
-// (As funções mostrarMensagem, onMounted, etc. são idênticas às de FerramentasView, apenas com os nomes de variáveis trocados. Vou copiar aqui para ficar completo)
 
 const mostrarMensagem = (msg, tipo = 'sucesso') => {
   if (tipo === 'sucesso') {

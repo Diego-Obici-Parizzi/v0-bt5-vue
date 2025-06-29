@@ -138,7 +138,7 @@ const adicionarOuAtualizarFerramenta = async () => {
       const data = await response.json();
       ferramentas.value.push(data);
       mostrarMensagem('Ferramenta adicionada com sucesso!');
-      novaFerramenta.value = { descricao: '', url: '' }; // Limpa o formulário
+      novaFerramenta.value = { descricao: '', url: '' };
     } catch (error) {
       mostrarMensagem(error.message, 'erro');
     }
@@ -147,8 +147,8 @@ const adicionarOuAtualizarFerramenta = async () => {
 
 const editarFerramenta = (ferramenta) => {
   ferramentaEmEdicao.value = ferramenta;
-  novaFerramenta.value = { ...ferramenta }; // Copia os dados para o formulário
-  window.scrollTo(0, 0); // Rola a página para o topo para ver o formulário de edição
+  novaFerramenta.value = { ...ferramenta };
+  window.scrollTo(0, 0); 
 };
 
 const cancelarEdicao = () => {
@@ -170,7 +170,7 @@ const removerFerramenta = async (id) => {
 </script>
 
 <style scoped>
-/* Adiciona espaço na parte inferior para o footer fixo não sobrepor o conteúdo */
+
 .container {
   padding-bottom: 100px; 
 }
