@@ -1,0 +1,18 @@
+{
+  "footer": {
+    "escopo": "teste",
+    "contribuinte": "é o neri?"
+  },
+  "ferramentas": [
+    {
+      "id": "1",
+      "nome": "Vue.js",
+      "url": "https://vuejs.org"
+    },
+    {
+      "id": "5c73",
+      "nome": "Curso de VUE",
+      "url": "https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL"
+    }
+  ]
+}
