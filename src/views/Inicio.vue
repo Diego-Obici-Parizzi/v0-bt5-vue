@@ -1,7 +1,7 @@
 <template>
-    <div class="container bg-light mt-5">
-      <div class="row">
-        <div class="col-md-12">
+    <div class="container-fluid mt-5">
+      <div class="row bg-secondary">
+        <div class="col-md-12 text-white">
           <h1>Pomodoro Timer</h1>
           <p>Um aplicativo para registrar sessões Pomodoro e acompanhar produtividade.</p>
 

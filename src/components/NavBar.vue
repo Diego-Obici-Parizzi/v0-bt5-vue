@@ -1,5 +1,4 @@
 <template>
-
     <div class="container-fluid bg-dark">
           <div class="row">
             <div class="col-8">
@@ -11,13 +10,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="/" class="nav-link text-decoration-none text-white"><h3>Inicio</h3></router-link> 
+              <router-link to="/" class="nav-link text-decoration-none text-white"><h3>Início</h3></router-link> 
             </li>
             <li class="nav-item">
               <router-link to="/pomodoro" class="nav-link text-decoration-none text-white"><h3>Pomodoro</h3></router-link> 
             </li>
             <li class="nav-item">
-              <router-link to="/estatisticas" class="nav-link text-decoration-none text-white"><h3>Estatisticas</h3></router-link> 
+              <router-link to="/estatisticas" class="nav-link text-decoration-none text-white"><h3>Estatísticas</h3></router-link> 
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,7 +34,7 @@
       
     </nav>
         </div>
-            <div class="col-4 text-end">
+            <div class="col-4 text-end align-content-center">
               <router-link to="" id="router"><img id="logo" :src="logo" :alt="alt"></router-link>
             </div>
           </div>

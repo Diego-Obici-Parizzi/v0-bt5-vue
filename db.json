@@ -18,39 +18,5 @@
       "atividade": "Croche",
       "pomodoros": 3
     }
-  ],
-
-  "ferramentas": [
-    {
-      "id": "1",
-      "descricao": "Vue.js",
-      "url": "https://vuejs.org/"
-    },
-    {
-      "id": "2",
-      "descricao": "Bootstrap 5",
-      "url": "https://getbootstrap.com/"
-    },
-    {
-      "id": "4303",
-      "descricao": "Curso De VUE",
-      "url": "https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL"
-    }
-  ],
-  "contribuintes": [
-    {
-      "id": "0398",
-      "nome": "Diego Obici Parizzi",
-      "contato": "diego_parizzi@hotmail.com",
-      "contribuicao": "FooterBar",
-      "periodo": "2025/2"
-    },
-    {
-      "id": "ed61",
-      "nome": "Maicon Neri",
-      "contato": "maiconneri252525@gmail.com",
-      "contribuicao": "Criação do Pomodoro API",
-      "periodo": "2025/2"
-    }
   ]
 }
