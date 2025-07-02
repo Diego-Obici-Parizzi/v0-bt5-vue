@@ -46,6 +46,12 @@ npm install
 npm run dev
 ```
 
+### Aplacação de Banco de Dados
+
+```bash
+npx json-server --watch  db.json
+```
+
 ### Build
 
 Certifique-se de que todas as configurações revisadas sobre o script de construção estejam no arquivo package.json e nos arquivos .env.[mode].

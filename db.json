@@ -17,6 +17,12 @@
       "nome": "Simone",
       "atividade": "Croche",
       "pomodoros": 3
+    },
+    {
+      "id": "55f5",
+      "nome": "Diego Obici Parizzi",
+      "atividade": "Desenvolver Vue",
+      "pomodoros": 22
     }
   ]
 }

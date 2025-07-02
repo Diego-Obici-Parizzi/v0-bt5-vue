@@ -26,9 +26,28 @@ export const routes = [
     ],
   },
   
+  {
+    path: `${baseUrl}/Contribuintes`,
+    //component: () => import("@/layouts/Page.vue"),
+    children: [
+      { path: "", name: "Contribuintes", component: () => import("@/views/Contribuintes.vue") },
+    ],
+  },
+
+  {
+    path: `${baseUrl}/Ferramentas`,
+    //component: () => import("@/layouts/Page.vue"),
+    children: [
+      { path: "", name: "ConFerramentastribuintes", component: () => import("@/views/Ferramentas.vue") },
+    ],
+  },
+
 ];
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  }
 });

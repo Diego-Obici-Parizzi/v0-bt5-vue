@@ -16,7 +16,7 @@ import Navbar from './components/NavBar.vue';
       return {
         logo_src: ('./img/pomodoro-logo.png'),
         app_name: 'Pomodoro App',
-        Utfpr_logo: ('./img/utfpr.gif'),
+        Utfpr_logo: ('./img/UTFPR_logo.png'),
         utfpr_name: 'UTFPR Logo'
       };
     }
