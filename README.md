@@ -38,6 +38,8 @@ Crie um novo repositório a partir do modelo e use seu gerenciador de pacotes fa
 
 ```bash
 npm install
+npm install json-server --save-dev
+npm install axios
 ```
 
 ### Ambiente de Desenvolvimento
@@ -49,6 +51,7 @@ npm run dev
 ### Aplacação de Banco de Dados
 
 ```bash
+
 npx json-server --watch  db.json
 ```
 
