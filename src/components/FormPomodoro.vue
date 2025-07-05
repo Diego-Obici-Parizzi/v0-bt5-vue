@@ -4,7 +4,7 @@
       <div class="col-12 text-center py-5">
         <p class="fs-1 fw-bold">Pomodoro Timer</p>
         <p class="fs-5">Gerencie suas atividades com eficiência usando o método Pomodoro.</p>
-        <p class="fs-5">Considere que cada pomodoro equivale a 25 minutos isira o nome e a atividade desempenhada e salve para que seja gerado dados</p>
+        <p class="fs-5">Considere que cada pomodoro equivale a 25 minutos. Insira o nome e a atividade desempenhada e salve para que seja gerado dados.</p>
         <router-link to="" id="p_25"><img id="p-25" :src="p_25" :alt="alt_3"></router-link>
       </div>
     </div>
@@ -20,37 +20,15 @@
           <div class="row g-3">
             <div class="col-md-4">
               <label for="nome" class="form-label">Nome do Usuário</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nome"
-                v-model="form.nome"
-                placeholder="Digite o nome"
-                required
-              >
+              <input type="text" class="form-control" id="nome" v-model="form.nome" placeholder="Digite o nome" required>
             </div>
             <div class="col-md-4">
               <label for="atividade" class="form-label">Atividade Desempenhada</label>
-              <input
-                type="text"
-                class="form-control"
-                id="atividade"
-                v-model="form.atividade"
-                placeholder="Digite a atividade"
-                required
-              >
+              <input type="text" class="form-control" id="atividade" v-model="form.atividade" placeholder="Digite a atividade" required>
             </div>
             <div class="col-md-4">
               <label for="pomodoros" class="form-label">Pomodoros Utilizados</label>
-              <input
-                type="number"
-                class="form-control w-50"
-                id="pomodoros"
-                v-model.number="form.pomodoros"
-                placeholder="Ex: 2"
-                min="1"
-                required
-              >
+              <input type="number" class="form-control w-50" id="pomodoros" v-model.number="form.pomodoros" placeholder="Ex: 2" min="1" required>
             </div>
           </div>
           <div class="mt-3">
@@ -85,7 +63,10 @@
                 <td>{{ dado.pomodoros }}</td>
                 <td>
                   <button class="btn btn-warning btn-sm me-1" @click="editar(dado)">Editar</button>
-                  <button class="btn btn-danger btn-sm" @click="excluir(dado.id)">Excluir</button>
+                  <button class="btn btn-danger btn-sm me-1" @click="excluir(dado.id)">Excluir</button>
+                  <button class="btn btn-success btn-sm" @click="startTimer(dado.atividade, dado.pomodoros)">
+                    <i class="bi bi-play-circle"></i> Iniciar
+                  </button>
                 </td>
               </tr>
               <tr v-if="dados.length === 0">
@@ -104,15 +85,15 @@ import { ref, onMounted } from 'vue';
 
 export default {
   name: 'FormPomodoro',
-  props: ["p_25", "alt_3"],
-  setup() {
+  props: ["p_25", "alt_3", "startTimer"],
+  setup(props) {
     const form = ref({
       id: null,
       nome: '',
       atividade: '',
       pomodoros: null
     });
-    
+
     const dados = ref([]);
 
     const getDados = async () => {
@@ -131,7 +112,6 @@ export default {
 
     const salvar = async () => {
       try {
-        
         if (!form.value.nome || !form.value.atividade || !form.value.pomodoros) {
           alert("Por favor, preencha todos os campos!");
           return;
@@ -145,7 +125,7 @@ export default {
         const url = form.value.id 
           ? `http://localhost:3000/Dados/${form.value.id}` 
           : "http://localhost:3000/Dados";
-        
+
         const method = form.value.id ? "PUT" : "POST";
 
         const response = await fetch(url, {
@@ -225,14 +205,14 @@ export default {
       salvar,
       excluir,
       editar,
-      limparFormulario
+      limparFormulario,
+      startTimer: props.startTimer
     };
   }
 };
 </script>
 
 <style scoped>
-
 @media (max-width: 1440px) {
   #p-25 {
     width: 30%;
